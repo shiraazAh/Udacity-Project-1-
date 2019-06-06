@@ -1,0 +1,22 @@
+  
+/* Off-canvas navigation bar for (max-width: 600)  */
+
+    nav {
+        background: white;
+        z-index: 10;
+        position: absolute;
+        height: 200px;
+        transform: translate(-400px, 0);
+        transition: transform 0.5s ease;
+    }
+
+    .nav_item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav.open {
+        transform: translate(0, 0);
+    }

@@ -1,0 +1,172 @@
+
+/* Minor Breakpoints */
+
+@media screen and (min-width: 350px) {
+    
+    .box {
+        min-height: 260px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    
+    .box {
+        min-height: 270px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    
+    .box {
+        min-height: 300px;
+    }
+}
+
+/* Major Breakpoint */
+
+@media screen and (min-width: 800px) {
+
+    /* New Background */
+    
+    html { 
+        background: url(website-background.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    /* Making some images visible  and some thing invisible*/
+    
+    section img {
+        display: block;
+    }
+
+    .menu { 
+        display: none;
+    }
+
+    section.image h1 {
+        display: none;
+    }
+
+    /* setting box height to previous */
+
+    .box {
+        min-height: 150px;
+    }
+
+    /* Navbar changes */
+
+    nav {
+        width: 80%;
+        background-color: black;
+    }
+
+    nav a {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Overlay effects for linked images */
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 40%;
+        height: 100%;
+        opacity: 0;
+        background: black;
+        transition: 0.5s ease;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .overlay-img-1{
+        position: relative;
+        width: 100%;
+    }
+
+    .overlay-img-1:hover .overlay {
+        opacity: .7;
+    }
+
+    /* Header items  */
+    header {
+        box-shadow: 0 0 0 ;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header h1 { 
+        margin: 28px 0px 0px 0px;
+        font-size: 52px;
+        color: white;
+    }
+
+    .logo {
+        width: 140px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    /* Section Items */
+
+    section.image, section.work-1 , section.work-2 {
+        display: block;
+        color: Black;
+        background: none;
+
+    }
+
+    section.work-1 a, section.work-2 a {
+        color: white;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+
+    }
+
+    /* section.image items */
+
+    section.image {
+        text-align: center;
+        width: 50%;
+    }
+
+    /* content-2 changes */
+
+    section.content-2 {
+        width: 50%;
+    }
+
+    section.work-1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    section.work-2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Section image changes */
+
+    .main-img {
+        width :80%;  
+        margin-top: 40px; 
+        float: right;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    }
+
+    .work1-img, .work2-img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    }
+}
+
+

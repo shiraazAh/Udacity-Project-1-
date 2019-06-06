@@ -1,0 +1,162 @@
+/* Defaults */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #424242;
+}
+
+main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.25);
+}
+
+.box {
+    width: 100%;
+    min-height: 150px;
+}
+
+section img {
+    display: none;
+}
+
+/* Header items  */
+
+header, section, div, footer, article {
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    min-height: 56px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.logo {
+    width: 60px;
+}
+
+header h1 {
+    font-family: 'Dosis', sans-serif;
+    color: black;
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0px 0px 10px;
+}
+
+header p { 
+    font-family: 'Dosis', sans-serif;
+    margin-left: 5px;
+    color: black;
+}
+
+.menu {
+    float: right;
+    width: 38px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+/* Navbar Items */
+
+nav {
+    width: 100%;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.nav__list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+nav ul li{
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    width: 31%;
+    padding: 24px;
+    text-transform: uppercase;
+}
+
+nav a{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background: red;
+}
+
+
+
+/* section items (Similair Properties that has to be added to more than one classes)*/
+
+section.image, section.work-1 , section.work-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: White;
+}
+
+section.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.work-1 a, section.work-2 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Section.image Properties */
+
+section.image {
+    background: url(Images/Coloured.jpg);
+    background-size: cover; 
+}
+
+section.image h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-img {
+    width: 100%;
+}
+
+/* Works content box */
+
+section.content-2 {
+    width: 100%;
+}
+
+/* section.work-1 Properties */
+
+section.work-1 {
+    background: url(Images/Brown.jpg);
+    background-size: cover; 
+}
+
+.work1-img {
+    width: 100%;
+}
+
+/* section.work-2 properties */
+
+section.work-2 {
+    background: url(Images/red_music.jpeg);
+    background-size: cover; 
+}
+
+.work2-img {
+    width: 100%;
+}

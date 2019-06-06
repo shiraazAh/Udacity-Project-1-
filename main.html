@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shiraaz</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="CSS/main-style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="CSS/mobile-navbar.css">
+    </head>
+    <body>
+        <!-- Main Header -->
+        <header>
+            <div class="header-inner"></div>
+            <img src="Images/logo.png" alt="logo" class="logo">
+            <h1>SHIRAAZ AHMED</h1>
+            <a id="menu">
+                <img src="Images/icons8-menu.svg" alt="menu" class="menu">
+            </a>
+        </div>
+        </header>
+        <!-- Navigation bar -->
+        <nav id="drawer" class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="#">Contact</a></li>
+                <li class="nav_item"><a href="#">Book</a></li>
+                <li class="nav_item"><a href="#">Projects</a></li>
+            </ul>
+        </nav>
+        <!-- Main content -->
+    <main>
+       <section class="content">
+           <!-- Main Image -->
+           <section class="image box">
+               <h1>Music Producer</h1>
+               <img src="Images/Coloured.jpg" alt="main-photo" class="main-img">
+           </section>
+           <!-- Works Images and Links -->
+           <section class="content-2">
+                <section class="work-1 box">
+                    <a href="#" class="img-links"><h1>Remixes</h1></a>
+                        <div class="overlay-img-1">
+                            <a href="#"></a><img src="Images/Brown.jpg" alt="main-photo" class="work1-img"></a>
+                        <div class="overlay"></div>
+                    </div>
+                </section>
+                <section class="work-2 box">
+                <a href="#" class="img-links"><h1>Originals</h1></a>
+                    <div class="overlay-img-1">
+                        <a href="#"><img src="Images/red_music.jpeg" alt="main-photo" class="work2-img"></a>
+                    <div class="overlay"></div>
+                </div>
+                </section>
+           </section>
+       </section>
+    </main>
+    <script type="text/javascript">
+     var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+    </script>
+    </body>
+</html>
