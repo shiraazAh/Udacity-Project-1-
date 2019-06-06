@@ -6,7 +6,7 @@
         z-index: 10;
         position: absolute;
         height: 200px;
-        transform: translate(-400px, 0);
+        transform: translate(-700px, 0);
         transition: transform 0.5s ease;
     }
 
