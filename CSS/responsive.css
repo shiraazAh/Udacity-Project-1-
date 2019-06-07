@@ -3,15 +3,90 @@
 
 @media screen and (min-width: 350px) {
     
-    .box {
+    .box, .box2 {
         min-height: 260px;
     }
+
+    .logo {
+        width: 70px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .menu {
+        width: 44px;
+    }
+
+    section.contact-us h1, section.about-me h1, section.book h1{
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    section.about-me p, section.contact-us p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .inpt {
+        padding: 10px;
+        margin-top: 30px;
+    }
+
 }
 
 @media screen and (min-width: 400px) {
     
-    .box {
+    .box, .box2 {
         min-height: 270px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    .menu {
+        width: 50px;
+    }
+
+    section.contact-us h1, section.about-me h1, section.book h1{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    
+    .box, .box2 {
+        min-height: 280px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    .menu {
+        width: 56px;
+    }
+
+    section.contact-us h1, section.about-me h1, section.book h1{
+        font-size: 30px;
+    }
+
+    footer {
+        padding: 7px;
+    }
+
+    footer ul li a {
+        font-size: 10px;
     }
 }
 
@@ -19,6 +94,72 @@
     
     .box {
         min-height: 300px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    header h1 {
+        font-size: 45px;
+    }
+
+    .menu {
+        width: 62px;
+    }
+
+    section.contact-us h1, section.about-me h1, section.book h1{
+        font-size: 34px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    
+    .box {
+        min-height: 310px;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    .menu {
+        width: 68px;
+    }
+
+    section.contact-us h1, section.about-me h1, section.book h1{
+        font-size: 36px;
+    }
+
+    section.about-me p, section.contact-us p {
+        font-size: 18px;
+    }
+
+    footer ul li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        background: black;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    section.contact-us h1, section.about-me h1, section.book h1{
+        font-size: 40px;
     }
 }
 
@@ -59,11 +200,9 @@
 
     nav {
         width: 80%;
-        background-color: black;
     }
 
     nav a {
-        color: white;
         font-family: 'Montserrat', sans-serif;
     }
 
@@ -75,7 +214,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        width: 40%;
+        width: 36%;
         height: 100%;
         opacity: 0;
         background: black;
@@ -164,8 +303,45 @@
     .work1-img, .work2-img {
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 36%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    }
+
+    /* About, Contact and Book  */
+
+    .box2 {
+        width: 80%;
+        border-radius: 10px;
+        min-height: 300px;
+    }
+
+    /* Text and margin changes */
+
+    section.contact-us h1, section.about-me h1, section.book h1{
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    section.about-me p, section.contact-us p {
+        font-size: 20px;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-bottom: 30px;
+    }
+
+    .inpt {
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    /* footer changes  */
+    
+    footer {
+        padding: 20px;
+    }
+
+    footer ul li a {
+        font-size: 14px;
     }
 }
 
