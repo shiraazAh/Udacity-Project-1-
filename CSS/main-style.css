@@ -6,6 +6,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* This is a mobile first design */
+
+/* main elements */
+
 html { 
     background: url(website-background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -25,7 +29,7 @@ main {
     box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.25);
 }
 
-/* Different boxes */
+/* Different container boxes */
 
 .box {
     width: 100%;
@@ -40,6 +44,7 @@ main {
     margin-top: 30px;
 }
 
+/* to make it invisible (used for (min-width: 800px) */
 section img {
     display: none;
 }
@@ -69,12 +74,15 @@ header h1 {
     margin: 10px 0px 0px 10px;
 }
 
+header p {
+    display: none; /* Display when min-width: 800px */
+}
+
 .menu {
     float: right;
     width: 38px;
     margin-top: 8px;
     display: inline-block;
-    color: white;
 }
 
 /* Navbar Items (Designed for (min-width: 800px) */
@@ -111,7 +119,7 @@ nav li:hover {
 
 
 
-/* section items (Similair Properties that has to be added to more than one classes)*/
+/* section items (Similair Properties that has to be added to more than one classes) */
 
 section.image, section.work-1 , section.work-2 {
     display: flex;
@@ -136,9 +144,6 @@ section.work-1 a, section.work-2 a {
 section.image {
     background: url(Images/Coloured.jpg);
     background-size: cover; 
-}
-
-section.image h1, section.image h2 {
 }
 
 .main-img {
@@ -173,7 +178,7 @@ section.work-2 {
     width: 100%;
 }
 
-/* About me box */
+/* About me box , book box and contact box items */
 
 section.about-me, section.contact-us, section.book{
     background-color: #000000;
@@ -197,6 +202,21 @@ section.contact-us h1, section.about-me h1, section.book h1{
     text-align: center;
     margin-bottom: 10px;
 }
+
+/* Only about me box changes */
+
+.project-link {
+    color:white;
+    cursor: pointer;
+}
+
+/* Only Contact box changes */
+
+section.contact-us p {
+    text-align: center;
+} 
+
+/* Only Book box changes */
 
 section.book {
     text-align: center;

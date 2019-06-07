@@ -7,6 +7,7 @@
         min-height: 260px;
     }
 
+    /* header items */
     .logo {
         width: 70px;
     }
@@ -75,6 +76,14 @@
 
     .menu {
         width: 56px;
+    }
+
+    section.image h1{
+        font-size: 40px;
+    }
+
+    section.work-1 a, section.work-2 a {
+        font-size: 30px;
     }
 
     section.contact-us h1, section.about-me h1, section.book h1{
@@ -221,6 +230,7 @@
         transition: 0.5s ease;
         margin-left: auto;
         margin-right: auto;
+        cursor: pointer;
     }
 
     .overlay-img-1{
@@ -246,6 +256,17 @@
         color: white;
     }
 
+    header p {
+        display: block;
+        color: white;
+        margin: 0;
+        text-align: center;
+        margin-top: -35px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
     .logo {
         width: 140px;
         margin: 0px 0px 0px 0px;
@@ -265,7 +286,6 @@
         font-size: 30px;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
-
     }
 
     /* section.image items */
